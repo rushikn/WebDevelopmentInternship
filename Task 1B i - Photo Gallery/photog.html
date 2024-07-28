@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSK Super Fan Gallery - Dhoni's Den</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #272C35; /* CSK Yellow */
+      color: #fff; /* White for text */
+      padding: 20px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .gallery-item img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .gallery-item .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .gallery-item:hover .overlay {
+      opacity: 1;
+    }
+
+    .gallery-item .text {
+      color: #fff;
+      font-weight: bold;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .gallery-item:hover .text {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1 class="text-center mb-5">Dhoni's Den</h1>
+  <div class="row gallery">
+    <div class="col-md-4 col-sm-6 gallery-item">
+      <img src="https://www.fabhotels.com/blog/assets/2023/08/600X400-5.jpg" alt="CSK in action">
+      <div class="overlay">
+        <div class="text">Yellove! </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 gallery-item">
+      <img src="https://c.ndtvimg.com/2020-11/91r84lg_ms-dhoni-back-csk-bcciipl_625x300_01_November_20.jpg" alt="Captain Cool Dhoni">
+      <div class="overlay">
+        <div class="text">Captain Cool </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 gallery-item">
+      <img src="https://imgk.timesnownews.com/story/MS_Dhoni_CSK_2.png?tr=w-1200,h-900" alt="CSK Lifting the Trophy">
+      <div class="overlay">
+        <div class="text">Champions! </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-
